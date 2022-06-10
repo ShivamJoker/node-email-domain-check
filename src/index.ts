@@ -1,10 +1,10 @@
-const dns = require('dns');
+import {resolveMx} from 'dns';
 
-const validateEmailAddress = emailAddress => {
+const validateEmailAddress = (emailAddress:string):Promise<boolean> => {
   return new Promise((resolve, reject) => {
-    const splitEmail = emailAddress.split('@');
+    const domain = emailAddress.split('@')[1];
 
-    dns.resolveMx(splitEmail[1], (err, mx) => {
+    resolveMx(domain, (err, mx) => {
       if (typeof mx != 'undefined') {
         mx
           ? resolve({ isValid: true, mxArray: mx })
