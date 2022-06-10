@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/martyndavies/legit"
+    "url": "https://github.com/ShivamJoker/node-email-domain-check"
   },
   "devDependencies": {
     "should": "*",
@@ -19,6 +19,6 @@
     "check",
     "validation"
   ],
-  "author": "Martyn Davies",
+  "author": "Shivam",
   "license": "MIT"
 }
