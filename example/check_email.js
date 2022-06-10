@@ -1,8 +1,5 @@
-const legit = require("../src/index.js");
+import { isEmailDomainValid } from "../src";
 
-legit("martyn@notadomainzzzzzzzzz.me")
-  .then(result => {
-    result.isValid ? console.log("Valid!") : console.log("Invalid!");
-    console.log(JSON.stringify(result));
-  })
-  .catch(err => console.log(err));
+isEmailDomainValid("hi@learnaws.io")
+  .then(() => console.log("MX record exist"))
+  .catch((err) => console.log(err));
