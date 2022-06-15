@@ -1,7 +1,7 @@
 ## Installation
 
-```html
-$ npm install git+https://github.com/ShivamJoker/node-email-domain-check.git
+```sh
+pnpm install  node-email-domain-check
 ```
 
 ## Usage
